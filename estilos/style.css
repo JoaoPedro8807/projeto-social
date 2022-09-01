@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+body {
+    background: url(../imagens/fundo-madeira.jpg)no-repeat top center;
+    background-size: cover; /* para cobrir a tela inteira*/
+    background-attachment: fixed; /* para não ter rolagem */
+}
+
+main {
+    position: relative; /*Posição para que o conteiner de fora fique relativo e o de dentro fique absoluto */
+    height: 100vh;
+}
+
+
+
+section#telefone {
+    position: absolute; /* Como colocamos o fundo (main) em relative, podemos alterar oq está em absolute (telefone), depois fazer algumas alterações no top e no left para que ele fique 
+    centralizado na tela, ele ficou centralizado na parte inferior direita, então colocamos o transfor e tiramos -50% para a esquerda e -50% para cima */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 627px; /* A imagem do iphone tem essas dimensões, então para não ocupar espaço definimos a largura e altura*/
+    width: 311px;
+    background:   url('../imagens/frame-iphone.png') no-repeat;
+   
+}
