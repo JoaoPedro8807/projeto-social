@@ -47,8 +47,9 @@ iframe#tela{
 }
 section#redesSociais {
     float: right;
+    margin-left: 20px;
+    
 }
-
 
 
 section#redesSociais img {
