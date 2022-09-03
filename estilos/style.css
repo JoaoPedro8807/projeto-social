@@ -45,3 +45,25 @@ iframe#tela{
     width: 267px;
     height: 472px;
 }
+section#redesSociais {
+    float: right;
+}
+
+
+
+section#redesSociais img {
+    width: 50px;
+    margin: 12px;
+    border-radius: 50%; /* colocando arredondamento nas bordas em 50% faz com que os ícones fique automaticamente redondos.*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.726);
+    box-sizing: border-box;
+    
+}
+
+section#redesSociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.600);
+    transform: translate(-8px, -8px); /* Faz com que ao ativar o hover (passar o mouse por cima), o icone mexa (translate) q qntd de pixlels que quiser, no caso foi -8px e -8px (para a esquerda e para cima) */
+    transition: transform 0.6s, border 1s; /* Faz com que o deslocamento do ícone seja suave, durando 0.6 segundo, e a borda demore 1s, ambos, depois de ativar o hover */
+    box-shadow: 10px 10px 13px rgba(0, 0, 0, 0.726);
+    
+}
